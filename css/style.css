@@ -1,0 +1,88 @@
+body { font-family: Arial, Helvetica; font-size: 12px; min-width: 700px;}
+#screenContainer { width: 2500px; height: 700px;
+    position: absolute;
+    overflow: hidden;
+    left: 0; top: 0;
+}
+#viewPort {
+    border:  5px solid #888; border-radius: 5px;
+    width: 500px; height: 700px;
+    overflow: hidden;position: relative;
+    background: linear-gradient(#ffffff, #7A97BF);
+    /*float: left;*/
+}
+.center {
+    margin-left: auto;
+    margin-right: auto;
+}
+#availablePlans {
+    background: #84ADCF;
+    height: 70px;
+    padding: 10px;
+    box-shadow: 10px 10px 5px #888888;
+}
+#limitedCoverage {
+    background: #A6AAAD;
+    height: 70px;
+    padding: 10px;
+    box-shadow: 10px 10px 5px #888888;
+}
+#comprehensiveCoverage {
+    background: #A6AAAD;
+    height: 70px;
+    padding: 10px;
+    box-shadow: 10px 10px 5px #888888;
+}
+#personalDetails {
+    background: #DADEE3;
+    height: 300px;
+    box-shadow: 10px 10px 5px #888888;
+}
+#summary {
+    background: #DADEE3;
+    height: 300px;
+    box-shadow: 10px 10px 5px #888888;
+}
+.screen {
+    width: 490px;
+    height: 600px;
+    margin: auto;
+    float: left;
+}
+.insurances {
+    width: 455px;
+    padding: 10px;
+    margin: 0;
+    background: #A6AAAD;
+    box-shadow: 10px 10px 5px #888888;
+    border: 2px solid #84ADCF;
+    border-radius: 3px;
+}
+.insured {
+    height: 200px;
+    width: 400px;
+    border: 2px solid black;
+    border-radius: 3px;
+    box-shadow: 10px 10px 5px #888888;
+}
+.btn-xlarge {
+    padding: 18px 28px;
+    font-size: 15px;
+    line-height: normal;
+    -webkit-border-radius: 8px;
+    -moz-border-radius: 8px;
+    border-radius: 8px;
+    background: #F07E51;
+    border: 2px solid #84ADCF;
+}
+.btn-xlarge1 {
+    padding: 30px 0px;
+    font-size: 15px;
+    line-height: normal;
+    -webkit-border-radius: 8px;
+    -moz-border-radius: 8px;
+    border-radius: 8px;
+    background: #87A7CC;
+    border: 2px solid #84ADCF;
+}
+

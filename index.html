@@ -1,0 +1,373 @@
+<!DOCTYPE Html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <title>Reliable Insurance</title>
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/style.css">
+    <script type="text/javascript" src="js/jquery-1.11.2.min.js"></script>
+    <script type="text/javascript" src="js/bootstrap.min.js"></script>
+    <link rel="stylesheet" href="//code.jquery.com/ui/1.11.4/themes/smoothness/jquery-ui.css">
+    <script src="//code.jquery.com/ui/1.11.4/jquery-ui.js"></script>
+</head>
+
+<body>
+
+<div id="viewPort" class="center">
+    <div id="screenContainer">
+        <div id="screen1" class="screen">
+            <ol class="breadcrumb">
+                <li class="active">Plans</li>
+            </ol>
+            <div id="availablePlans" align="center">
+                <h3>Available Plans</h3>
+                <br>
+                <div class="insurances">
+                    Limited coverage plan provides the basic protection, and may not be adequate. It may cost you less, but the coverage is limited to pre defined clause of fixed amount of charges. Must read policy details for benefit and coverage details.
+                    <div align="right">
+                        <button id="selectButtonLimited" type="button" class="btn btn-primary">Select</button>
+                    </div>
+                </div>
+                <br><br>
+                <div class="insurances">
+                    These plans offer much better and flexible coverage. Most of these plans work like PPO type of 80-20% plan. Means insurance have to pay 20% of the cose for the first $5,000 per policy period, policy pays rest 80%.
+                    <div align="right">
+                        <button id="selectButtonComprehensive" type="button" class="btn btn-primary">Select</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div id="screen2" class="screen">
+            <ol class="breadcrumb">
+                <li><a href="home">Plans</a></li>
+                <li class="active">Limited Coverage</li>
+            </ol>
+            <div id="limitedCoverage" align="center">
+                <h3>Limited Coverage</h3>
+                <!--<br>-->
+                <div class="insurances" style="background: #ffffff">
+                    <table class='table borderless'>
+                        <tr>
+                            <td>
+                                <button type="button" class="btn-xlarge">Limited Plan A</button>
+                            </td>
+                            <td>
+                                Limited Plan A provide basic medical coverage for non-U.S. citizens, who come to the U.S. for business, pleasure, to study, or to immigrate with a maximum coverage of $120,000.
+                            </td>
+                        </tr>
+                    </table>
+                    <div align="right" style="background: #D5E6C8">
+                        <button id="limitedPlanA" type="button" class="btn btn-default" style="color: #204d74">Select</button>
+                    </div>
+                </div>
+                <br><br>
+                <div class="insurances" style="background: #E7EBC5">
+                    <table class='table' border="0">
+                        <tr>
+                            <td>
+                                <button type="button" class="btn-xlarge">Limited Plan B</button>
+                            </td>
+                            <td>
+                                Limited Plan B provide basic medical coverage for non-U.S. citizens, who come to the U.S. for business, pleasure, to study, or to immigrate with a maximum coverage of $140,000.
+                            </td>
+                        </tr>
+                    </table>
+                    <div align="right" style="background: #D5E6C8">
+                        <button id="limitedPlanB" type="button" class="btn btn-default" style="color: #204d74">Select</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div id="screen3" class="screen">
+            <ol class="breadcrumb">
+                <li><a href="home">Plans</a></li>
+                <li class="active">Comprehensive Coverage</li>
+            </ol>
+            <div id="comprehensiveCoverage" align="center">
+                <h3>Comprehensive Coverage</h3>
+                <div class="insurances" style="background: #ffffff">
+                    <table class='table borderless'>
+                        <tr>
+                            <td>
+                                <button type="button" class="btn-xlarge1">Comprehensive Plan A</button>
+                            </td>
+                            <td>
+                                <h4>Comprehensive Plan A</h4>
+                                Plan-A offers medical coverage and emergency services to individuals and families travelling outside their Home Countries.
+                            </td>
+                        </tr>
+                    </table>
+                    <div align="right" style="background: #D5E6C8">
+                        <button id="comprehensivePlanA" type="button" class="btn btn-default" style="color: #204d74">Select</button>
+                    </div>
+                </div>
+                <div class="insurances" style="background: #E7EBC5">
+                    <table class='table borderless'>
+                        <tr>
+                            <td>
+                                <button type="button" class="btn-xlarge1">Comprehensive Plan B</button>
+                            </td>
+                            <td>
+                                <h4>Comprehensive Plan B</h4>
+                                Plan-B offers medical coverage and emergency services to individuals and families travelling outside their Home Countries. the plan pays 75% of eligible expenses to the selected Medical Maximum.
+                            </td>
+                        </tr>
+                    </table>
+                    <div align="right" style="background: #D5E6C8">
+                        <button id="comprehensivePlanB" type="button" class="btn btn-default" style="color: #204d74">Select</button>
+                    </div>
+                </div>
+                <div class="insurances" style="background: #D5D6CB">
+                    <table class='table borderless'>
+                        <tr>
+                            <td>
+                                <button type="button" class="btn-xlarge1">Comprehensive Plan C</button>
+                            </td>
+                            <td>
+                                <h4>Comprehensive Plan C</h4>
+                                Plan-C offers medical coverage and emergency services to individuals and families travelling outside their Home Countries
+                            </td>
+                        </tr>
+                    </table>
+                    <div align="right" style="background: #D5E6C8">
+                        <button id="comprehensivePlanC" type="button" class="btn btn-default" style="color: #204d74">Select</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div id="screen4" class="screen">
+            <ol class="breadcrumb">
+            </ol>
+            <div id="personalDetails" align="center">
+                <h3>Personal Details</h3>
+                <div id="insured1" class="insured" align="center">
+                    <div>
+                        <h5 style="margin-top: 0px">Insured 1</h5>
+                    </div>
+                    <form class="form-horizontal" data-toggle="validator" role="form">
+                        <div class="form-group" align="center">
+                            <label class="control-label col-sm-3">Name:</label>
+                            <div class="col-sm-6">
+                                <input type="text" class="form-control" id="name" placeholder="Enter Name" required>
+                            </div>
+                        </div>
+                        <div class="form-group" align="center">
+                            <label class="control-label col-sm-3">Address:</label>
+                            <div class="col-sm-6">
+                                <input type="text" id="addressLine1" placeholder="Enter Address Line 1">
+                                <input type="text" id="addressLine2" placeholder="Enter Address Line 2">
+                            </div>
+                        </div>
+                        <div class="form-group dateP1" align="center">
+                            <label class="control-label col-sm-3">Start Date:</label>
+                            <div class="col-sm-6">
+                                <input type="text" id="datepicker1">
+                            </div>
+                        </div>
+                        <div class="form-group dateP2">
+                            <label class="control-label col-sm-3">End Date:</label>
+                            <div class="col-sm-6">
+                                <input type="text" id="datepicker2">
+                            </div>
+                        </div>
+                    </form>
+                </div>
+                <br>
+                <div id="footerScreen4">
+                    <a href="removeInsured">-Remove Insured</a>
+                    <a href="addMoreInsured">+Add more insured</a>
+                    <div align="right">
+                        <button id="submitButton" type="submit" class="btn btn-primary">Submit</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div id="screen5" class="screen">
+            <div id="summary" align="center">
+                <h3>Summary</h3>
+                <div id="selectedPlan" align="center">
+                </div>
+                <div id="insuredPeople" align="center">
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+</body>
+
+<script type="text/javascript" src="js/jquery-1.11.2.min.js"></script>
+<script>
+    jQuery.noConflict();
+    location.href = "#home";
+    var insuranceSelected = "";
+    var i = 1;
+    var insuredPeople;
+
+    $("#selectButtonLimited").click(function(){
+        $("#screenContainer").animate({
+            left: "-490"
+        },200);
+    });
+    $("#selectButtonComprehensive").click(function(){
+        $("#screenContainer").animate({
+            left: "-980"
+        },200);
+    });
+    $("a[href='home']").click(function(event){
+        event.preventDefault();
+        $("#screenContainer").animate({
+            left: "0"
+        },200);
+    });
+
+
+    $("#limitedPlanA,#limitedPlanB").click(function(){
+        $("#screenContainer").animate({
+            left: "-1470"
+        },200);
+        $("#screen4 > .breadcrumb").html('<li><a href="home">Plans</a></li> <li><a href="limitedCoverage">Limited Coverage</a></li> <li class="active">Personal Details</li>');
+        $("a[href='limitedCoverage']").click(function(event){
+            event.preventDefault();
+            $("#screenContainer").animate({
+                left: "-490"
+            },200);
+        });
+        $("a[href='home']").click(function(event){
+            event.preventDefault();
+            $("#screenContainer").animate({
+                left: "0"
+            },200);
+        });
+        insuranceSelected = $(this).attr("id");
+    });
+
+    $("#comprehensivePlanA,#comprehensivePlanB,#comprehensivePlanC").click(function(){
+        $("#screenContainer").animate({
+            left: "-1470"
+        },200);
+        $("#screen4 > .breadcrumb").html('<li><a href="home">Plans</a></li> <li><a href="comprehensiveCoverage">Comprehensive Coverage</a></li> <li class="active">Personal Details</li>');
+        $("a[href='comprehensiveCoverage']").click(function(event){
+            event.preventDefault();
+            $("#screenContainer").animate({
+                left: "-980"
+            },200);
+        });
+        $("a[href='home']").click(function(event){
+            event.preventDefault();
+            $("#screenContainer").animate({
+                left: "0"
+            },200);
+        });
+        insuranceSelected = $(this).attr("id");
+    });
+
+    $(function() {
+        $( "#datepicker1" ).datepicker();
+    });
+    $(function() {
+        $( "#datepicker2" ).datepicker();
+    });
+    $("a[href='addMoreInsured']").click(function(event){
+        event.preventDefault();
+        var height = (500 + i*200) + "px";
+        if(i === 5){
+            alert("You cannot add more than 5 members");
+            return;
+        }
+        $("#personalDetails").animate({"height": height},200);
+        $("#viewPort").animate({"height": height},200);
+        $("#screenContainer").animate({"height": height},200);
+        var lastInsured = "#insured" + i;
+        $(lastInsured + " .has-error").removeClass("has-error");
+        var newInsured = "insured" + (i+1);
+        var $lastInsured = $(lastInsured);
+
+        var $insuredInstance = $lastInsured.clone(true);
+        $insuredInstance.find("#name").val("");
+        $insuredInstance.find("#addressLine1").val("");
+        $insuredInstance.find("#addressLine2").val("");
+
+        $insuredInstance.attr("id",newInsured);
+        $insuredInstance.find("h5").html("Insured "+ (i+1));
+        $lastInsured.after($insuredInstance);
+        $lastInsured.after($("<br>"));
+
+        i++;
+    });
+    $("a[href='removeInsured']").click(function(event){
+
+        event.preventDefault();
+        if(i===1){
+            alert("You need atleast one insured member");
+            return;
+        }
+        i--;
+        var height = (500 + i*200);
+        if(height >= 700) {
+            height = height + "px";
+            $("#personalDetails").animate({"height": height}, 200);
+            $("#viewPort").animate({"height": height}, 200);
+            $("#screenContainer").animate({"height": height}, 200);
+        }
+
+        var lastInsured = "#insured"+(i+1);
+        $(lastInsured).hide();
+
+    });
+
+    var insureds = [];
+
+    $("#submitButton").click(function(){
+        if(!validate())
+            return;
+        $("#screenContainer").animate({
+            left: "-1960"
+        },200);
+
+        $("#viewPort").animate({"height": 500}, 200);
+        $("#screenContainer").animate({"height": 500}, 200);
+
+        insuranceSelected = insuranceSelected.replace(/([a-z])([A-Z])/g, '$1 $2');
+        $("#selectedPlan").html("<h5>Thank you for choosing Reliable Insurance! <br>Plan you have selected is " + insuranceSelected + "</h5>");
+        var insuredPeople = "<h5>";
+        for(j=1;j<=insureds.length;j++)
+            insuredPeople = insuredPeople + insureds[j-1].name + "<br>";
+        insuredPeople = insuredPeople + "</h5>";
+        $("#insuredPeople").html(insuredPeople);
+    });
+
+    function validate(){
+        for(j = 1;j<=i ; j++){
+            pname = $("#insured"+j).find("#name").val();
+
+            if(!pname || pname.length === 0) {
+                alert("Name is a required field");
+                $("#insured"+j + " .form-horizontal .form-group").first().attr("class","form-group has-error");
+                return false;
+            }
+            paddress = $("#insured"+j).find("#addressLine1").val() + $("#insured"+j).find("#addressLine2").val();
+            pstartDate = $("#insured"+j).find("#datepicker1").val();
+            if(!pstartDate || pstartDate.length === 0) {
+                alert("Start Date is a required field");
+                $("#insured"+j + " .form-horizontal .dateP1").first().attr("class","form-group has-error");
+                return false;
+            }
+            pendDate = $("#insured"+j).find("#datepicker1").val();
+            if(!pendDate || pendDate.length === 0) {
+                alert("End Date is a required field");
+                return false;
+            }
+            insured = {
+                name : pname,
+                address:paddress,
+                startDate:pstartDate,
+                endDate:pendDate};
+            insureds.push(insured);
+        }
+        return true;
+    }
+
+
+</script>
