@@ -1,0 +1,27 @@
+Introduction
+--------------
+Insurance App
+The web application here is a demonstration of JQuery Based Rich UI application. For demonstration, it mocks up an Insurance company namely 'Reliable Insurance'
+--------------
+Installation
+The application is self sufficient, it comes with all the components it needs. 
+Application was developed using JQuery, Bootstrap and some JS plugins.
+--------------
+Features
+- Smooth interface
+- Single Page Application
+- Breadcrumbs enabled
+- Form validation
+- Back button enabled for browser history
+--------------
+Directory Structure, clearly follows separation of concern
+- css : It contains application specific as well as other standard stylesheets
+- js : It contains the javascript used by this application as well as standard scripts for jquery, bootstrap etc.
+- fonts: Bootstrap fonts
+- index.html: index file for application
+--------------
+Author
+Shobhank Sharma
+Software Engineer, Akamai Technologies.
+eMail shobhanks1987@gmail.com
+

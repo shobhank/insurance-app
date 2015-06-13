@@ -2,20 +2,48 @@
  * Created by shsharma on 6/12/15.
  */
 jQuery.noConflict();
-location.href = "#home";
 var insuranceSelected = "";
 var i = 1;
 var insuredPeople;
+location.hash = "home";
+
+function locationHashChanged() {
+    if (location.hash === "#home") {
+        $("#screenContainer").animate({
+            left: "0"
+        },200);
+    } else if (location.hash === "#limited"){
+        $("#screenContainer").animate({
+            left: "-490"
+        },200);
+    } else if (location.hash === "#comprehensive"){
+        $("#screenContainer").animate({
+            left: "-980"
+        },200);
+    } else if (location.hash === "#personal"){
+        $("#screenContainer").animate({
+            left: "-1470"
+        },200);
+    } else if (location.hash === "#submit"){
+        $("#screenContainer").animate({
+            left: "-1960"
+        },200);
+    }
+}
+
+window.onhashchange = locationHashChanged;
 
 $("#selectButtonLimited").click(function(){
     $("#screenContainer").animate({
         left: "-490"
     },200);
+    location.hash = "limited";
 });
 $("#selectButtonComprehensive").click(function(){
     $("#screenContainer").animate({
         left: "-980"
     },200);
+    location.hash = "comprehensive";
 });
 $("a[href='home']").click(function(event){
     event.preventDefault();
@@ -23,7 +51,6 @@ $("a[href='home']").click(function(event){
         left: "0"
     },200);
 });
-
 
 $("#limitedPlanA,#limitedPlanB").click(function(){
     $("#screenContainer").animate({
@@ -43,6 +70,7 @@ $("#limitedPlanA,#limitedPlanB").click(function(){
         },200);
     });
     insuranceSelected = $(this).attr("id");
+    location.hash = "personal";
 });
 
 $("#comprehensivePlanA,#comprehensivePlanB,#comprehensivePlanC").click(function(){
@@ -63,6 +91,7 @@ $("#comprehensivePlanA,#comprehensivePlanB,#comprehensivePlanC").click(function(
         },200);
     });
     insuranceSelected = $(this).attr("id");
+    location.hash = "personal";
 });
 
 $(function() {
@@ -138,6 +167,7 @@ $("#submitButton").click(function(){
         insuredPeople = insuredPeople + insureds[j-1].name + "<br>";
     insuredPeople = insuredPeople + "</h5>";
     $("#insuredPeople").html(insuredPeople);
+    location.hash = "submit";
 });
 
 function validate(){
